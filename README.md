@@ -1,2 +1,2 @@
-# star-cluster-combat
+# Star Cluster Combat
 Mobile game - Rogue like Galaga
