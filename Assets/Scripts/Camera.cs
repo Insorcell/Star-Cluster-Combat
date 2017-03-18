@@ -1,12 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HandleChangeScene : MonoBehaviour {
+public class Camera : MonoBehaviour {
     public Transform mainmenuLocation;
     public Transform gameLocation;
     public Transform optionsLocation;
     public Transform creditsLocation;
+
+    void Start ()
+    {
+        transform.position = mainmenuLocation.position;
+    }
+
     public void ChangeScene(int location)
     {
         switch (location)

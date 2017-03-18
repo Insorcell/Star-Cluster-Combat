@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Star-Cluster-Combat", "Star-Cluster-Combat.csproj", "{A13C4134-73E3-157F-CAED-73971D279418}"
 EndProject
 Global

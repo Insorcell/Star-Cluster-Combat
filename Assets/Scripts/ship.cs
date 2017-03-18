@@ -1,16 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ship : MonoBehaviour {
+    public Rigidbody2D rb;
+    public int speed = 100;
+    bool left = false;
+    bool right = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Update ()
+    {
+        if (left)
+        {
+            rb.AddForce(new Vector2(-(speed * Time.deltaTime), 0));
+        }
+        if (right)
+        {
+            rb.AddForce(new Vector2(speed * Time.deltaTime, 0));
+        }
+    }
+
+    public void MoveShipLeft ()
+    {
+        left = !left;
+    }
+
+    public void MoveShipRight ()
+    {
+        right = !right;
+    }
 }
